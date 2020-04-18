@@ -16,6 +16,7 @@ router.post("/", async (req, res) => {
   const todo = new Todo({
     title: req.body.title,
     description: req.body.description,
+    date: req.body.date
   });
   try {
     const savedTodo = await todo.save();
