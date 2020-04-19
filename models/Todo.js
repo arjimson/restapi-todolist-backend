@@ -9,11 +9,15 @@ const TodoSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  color: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     required: true,
   },
-  createDate: {
+  createdDate: {
     type: Date,
     default: Date.now,
   },
